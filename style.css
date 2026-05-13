@@ -1,5 +1,5 @@
 /* ============================================
-   VORTEX AGENCY — Premium Dark & Orange CSS
+   THE VISION HIVE — Premium Dark & Blue CSS
    ============================================ */
 
 /* ---- CSS Variables ---- */
@@ -10,17 +10,17 @@
   --dark-3: #151515;
   --dark-4: #1a1a1a;
   --dark-5: #222222;
-  --orange: #ff6600;
-  --orange-light: #ff8533;
-  --orange-dim: rgba(255, 102, 0, 0.12);
-  --orange-glow: rgba(255, 102, 0, 0.4);
-  --orange-glow-sm: rgba(255, 102, 0, 0.2);
+  --blue: #0066ff;
+  --blue-light: #3385ff;
+  --blue-dim: rgba(0, 102, 255, 0.12);
+  --blue-glow: rgba(0, 102, 255, 0.4);
+  --blue-glow-sm: rgba(0, 102, 255, 0.2);
   --white: #ffffff;
   --gray-100: #f5f5f5;
   --gray-300: #aaaaaa;
   --gray-500: #555555;
   --glass-bg: rgba(255, 255, 255, 0.03);
-  --glass-border: rgba(255, 102, 0, 0.15);
+  --glass-border: rgba(0, 102, 255, 0.15);
   --font-display: 'Bebas Neue', sans-serif;
   --font-body: 'Syne', sans-serif;
   --font-text: 'DM Sans', sans-serif;
@@ -68,7 +68,7 @@ ul { list-style: none; }
 /* ---- Custom Cursor ---- */
 .cursor {
   width: 12px; height: 12px;
-  background: var(--orange);
+  background: var(--blue);
   border-radius: 50%;
   position: fixed;
   pointer-events: none;
@@ -80,7 +80,7 @@ ul { list-style: none; }
 
 .cursor-follower {
   width: 36px; height: 36px;
-  border: 1.5px solid var(--orange);
+  border: 1.5px solid var(--blue);
   border-radius: 50%;
   position: fixed;
   pointer-events: none;
@@ -110,7 +110,7 @@ body:has(button:hover) .cursor-follower {
 /* ---- Scrollbar ---- */
 ::-webkit-scrollbar { width: 4px; }
 ::-webkit-scrollbar-track { background: var(--black); }
-::-webkit-scrollbar-thumb { background: var(--orange); border-radius: 2px; }
+::-webkit-scrollbar-thumb { background: var(--blue); border-radius: 2px; }
 
 /* ============================================
    NAVIGATION
@@ -131,7 +131,7 @@ body:has(button:hover) .cursor-follower {
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   padding: 16px 60px;
-  border-bottom: 1px solid rgba(255, 102, 0, 0.1);
+  border-bottom: 1px solid rgba(0, 102, 255, 0.1);
 }
 
 .nav-logo {
@@ -142,8 +142,8 @@ body:has(button:hover) .cursor-follower {
   transition: var(--transition);
 }
 
-.nav-logo span { color: var(--orange); }
-.nav-logo:hover { color: var(--orange); }
+.nav-logo span { color: var(--blue); }
+.nav-logo:hover { color: var(--blue); }
 
 .nav-links {
   display: flex;
@@ -166,7 +166,7 @@ body:has(button:hover) .cursor-follower {
   position: absolute;
   bottom: -4px; left: 0;
   width: 0; height: 1.5px;
-  background: var(--orange);
+  background: var(--blue);
   transition: var(--transition);
 }
 
@@ -179,17 +179,17 @@ body:has(button:hover) .cursor-follower {
   font-weight: 700;
   letter-spacing: 1.5px;
   text-transform: uppercase;
-  color: var(--orange);
-  border: 1.5px solid var(--orange);
+  color: var(--blue);
+  border: 1.5px solid var(--blue);
   padding: 10px 24px;
   border-radius: 4px;
   transition: var(--transition);
 }
 
 .nav-cta:hover {
-  background: var(--orange);
-  color: var(--black);
-  box-shadow: 0 0 24px var(--orange-glow);
+  background: var(--blue);
+  color: var(--white);
+  box-shadow: 0 0 24px var(--blue-glow);
 }
 
 .hamburger {
@@ -238,7 +238,7 @@ body:has(button:hover) .cursor-follower {
   transition: var(--transition);
 }
 
-.mobile-link:hover { color: var(--orange); }
+.mobile-link:hover { color: var(--blue); }
 
 /* ============================================
    HERO
@@ -257,8 +257,8 @@ body:has(button:hover) .cursor-follower {
   position: absolute;
   inset: 0;
   background-image:
-    linear-gradient(rgba(255, 102, 0, 0.04) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 102, 0, 0.04) 1px, transparent 1px);
+    linear-gradient(rgba(0, 102, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 102, 255, 0.04) 1px, transparent 1px);
   background-size: 80px 80px;
   animation: gridShift 30s linear infinite;
 }
@@ -278,14 +278,14 @@ body:has(button:hover) .cursor-follower {
 
 .hero-orb-1 {
   width: 600px; height: 600px;
-  background: radial-gradient(circle, rgba(255, 102, 0, 0.18) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(0, 102, 255, 0.18) 0%, transparent 70%);
   top: -150px; right: -100px;
   animation-delay: 0s;
 }
 
 .hero-orb-2 {
   width: 400px; height: 400px;
-  background: radial-gradient(circle, rgba(255, 102, 0, 0.1) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(0, 102, 255, 0.1) 0%, transparent 70%);
   bottom: 0; left: -100px;
   animation-delay: -4s;
 }
@@ -306,9 +306,9 @@ body:has(button:hover) .cursor-follower {
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  background: rgba(255, 102, 0, 0.08);
-  border: 1px solid rgba(255, 102, 0, 0.25);
-  color: var(--orange-light);
+  background: rgba(0, 102, 255, 0.08);
+  border: 1px solid rgba(0, 102, 255, 0.25);
+  color: var(--blue-light);
   font-family: var(--font-body);
   font-size: 12px;
   font-weight: 600;
@@ -321,10 +321,10 @@ body:has(button:hover) .cursor-follower {
 
 .badge-dot {
   width: 8px; height: 8px;
-  background: var(--orange);
+  background: var(--blue);
   border-radius: 50%;
   animation: pulse 2s ease-in-out infinite;
-  box-shadow: 0 0 10px var(--orange);
+  box-shadow: 0 0 10px var(--blue);
 }
 
 @keyframes pulse {
@@ -342,27 +342,27 @@ body:has(button:hover) .cursor-follower {
 }
 
 .title-glow {
-  color: var(--orange);
+  color: var(--blue);
   position: relative;
   display: inline-block;
   text-shadow:
-    0 0 40px rgba(255, 102, 0, 0.6),
-    0 0 80px rgba(255, 102, 0, 0.3),
-    0 0 120px rgba(255, 102, 0, 0.15);
+    0 0 40px rgba(0, 102, 255, 0.6),
+    0 0 80px rgba(0, 102, 255, 0.3),
+    0 0 120px rgba(0, 102, 255, 0.15);
   animation: glowPulse 3s ease-in-out infinite;
 }
 
 @keyframes glowPulse {
   0%, 100% {
     text-shadow:
-      0 0 40px rgba(255, 102, 0, 0.6),
-      0 0 80px rgba(255, 102, 0, 0.3);
+      0 0 40px rgba(0, 102, 255, 0.6),
+      0 0 80px rgba(0, 102, 255, 0.3);
   }
   50% {
     text-shadow:
-      0 0 60px rgba(255, 102, 0, 0.9),
-      0 0 120px rgba(255, 102, 0, 0.5),
-      0 0 200px rgba(255, 102, 0, 0.2);
+      0 0 60px rgba(0, 102, 255, 0.9),
+      0 0 120px rgba(0, 102, 255, 0.5),
+      0 0 200px rgba(0, 102, 255, 0.2);
   }
 }
 
@@ -395,8 +395,8 @@ body:has(button:hover) .cursor-follower {
   display: inline-flex;
   align-items: center;
   gap: 12px;
-  background: var(--orange);
-  color: var(--black);
+  background: var(--blue);
+  color: var(--white);
   font-family: var(--font-body);
   font-size: 13px;
   font-weight: 700;
@@ -415,7 +415,7 @@ body:has(button:hover) .cursor-follower {
   content: '';
   position: absolute;
   inset: 0;
-  background: var(--orange-light);
+  background: var(--blue-light);
   transform: translateX(-100%);
   transition: transform var(--transition);
 }
@@ -434,7 +434,7 @@ body:has(button:hover) .cursor-follower {
 }
 
 .btn-primary:hover {
-  box-shadow: 0 0 40px var(--orange-glow), 0 8px 30px rgba(255, 102, 0, 0.4);
+  box-shadow: 0 0 40px var(--blue-glow), 0 8px 30px rgba(0, 102, 255, 0.4);
   transform: translateY(-2px);
 }
 
@@ -455,7 +455,7 @@ body:has(button:hover) .cursor-follower {
   transition: var(--transition);
 }
 
-.btn-ghost:hover { color: var(--orange); border-color: var(--orange); }
+.btn-ghost:hover { color: var(--blue); border-color: var(--blue); }
 
 .btn-full { width: 100%; justify-content: center; }
 
@@ -481,7 +481,7 @@ body:has(button:hover) .cursor-follower {
 
 .stat-num em {
   font-style: normal;
-  color: var(--orange);
+  color: var(--blue);
   font-size: 28px;
 }
 
@@ -519,7 +519,7 @@ body:has(button:hover) .cursor-follower {
 .scroll-line {
   width: 1px;
   height: 60px;
-  background: linear-gradient(to bottom, var(--orange), transparent);
+  background: linear-gradient(to bottom, var(--blue), transparent);
   animation: scrollLine 2s ease-in-out infinite;
 }
 
@@ -535,9 +535,9 @@ body:has(button:hover) .cursor-follower {
    ============================================ */
 .marquee-section {
   padding: 20px 0;
-  background: rgba(255, 102, 0, 0.05);
-  border-top: 1px solid rgba(255, 102, 0, 0.1);
-  border-bottom: 1px solid rgba(255, 102, 0, 0.1);
+  background: rgba(0, 102, 255, 0.05);
+  border-top: 1px solid rgba(0, 102, 255, 0.1);
+  border-bottom: 1px solid rgba(0, 102, 255, 0.1);
   overflow: hidden;
 }
 
@@ -560,7 +560,7 @@ body:has(button:hover) .cursor-follower {
 }
 
 .marquee-inner .dot {
-  color: var(--orange);
+  color: var(--blue);
   font-size: 8px;
 }
 
@@ -584,9 +584,9 @@ body:has(button:hover) .cursor-follower {
   font-weight: 700;
   letter-spacing: 3px;
   text-transform: uppercase;
-  color: var(--orange);
-  background: var(--orange-dim);
-  border: 1px solid rgba(255, 102, 0, 0.2);
+  color: var(--blue);
+  background: var(--blue-dim);
+  border: 1px solid rgba(0, 102, 255, 0.2);
   padding: 6px 16px;
   border-radius: 100px;
   margin-bottom: 20px;
@@ -602,7 +602,7 @@ body:has(button:hover) .cursor-follower {
   margin-bottom: 16px;
 }
 
-.accent { color: var(--orange); }
+.accent { color: var(--blue); }
 
 .section-sub {
   font-size: 15px;
@@ -639,7 +639,7 @@ body:has(button:hover) .cursor-follower {
   position: absolute;
   top: 0; left: 0; right: 0;
   height: 1px;
-  background: linear-gradient(90deg, transparent, var(--orange), transparent);
+  background: linear-gradient(90deg, transparent, var(--blue), transparent);
   opacity: 0.4;
 }
 
@@ -672,7 +672,7 @@ body:has(button:hover) .cursor-follower {
   inset: 0;
   border-radius: var(--radius);
   border: 1px solid transparent;
-  background: linear-gradient(135deg, rgba(255,102,0,0), rgba(255,102,0,0.3)) border-box;
+  background: linear-gradient(135deg, rgba(0,102,255,0), rgba(0,102,255,0.3)) border-box;
   -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
   -webkit-mask-composite: destination-out;
   mask-composite: exclude;
@@ -686,7 +686,7 @@ body:has(button:hover) .cursor-follower {
   position: absolute;
   top: -50%; left: -50%;
   width: 200%; height: 200%;
-  background: radial-gradient(circle at 30% 30%, rgba(255,102,0,0.08), transparent 60%);
+  background: radial-gradient(circle at 30% 30%, rgba(0,102,255,0.08), transparent 60%);
   opacity: 0;
   transition: var(--transition);
   pointer-events: none;
@@ -694,17 +694,17 @@ body:has(button:hover) .cursor-follower {
 
 .service-card:hover {
   transform: translateY(-6px);
-  border-color: rgba(255, 102, 0, 0.25);
-  box-shadow: 0 0 40px rgba(255,102,0,0.08), 0 20px 60px rgba(0,0,0,0.4);
-  background: rgba(255,102,0,0.03);
+  border-color: rgba(0, 102, 255, 0.25);
+  box-shadow: 0 0 40px rgba(0,102,255,0.08), 0 20px 60px rgba(0,0,0,0.4);
+  background: rgba(0,102,255,0.03);
 }
 
 .service-card:hover .card-glow { opacity: 1; }
 
 .card-icon {
   width: 52px; height: 52px;
-  background: var(--orange-dim);
-  border: 1px solid rgba(255,102,0,0.2);
+  background: var(--blue-dim);
+  border: 1px solid rgba(0,102,255,0.2);
   border-radius: var(--radius-sm);
   display: flex;
   align-items: center;
@@ -714,14 +714,14 @@ body:has(button:hover) .cursor-follower {
 }
 
 .service-card:hover .card-icon {
-  background: rgba(255,102,0,0.15);
-  border-color: rgba(255,102,0,0.4);
-  box-shadow: 0 0 20px rgba(255,102,0,0.2);
+  background: rgba(0,102,255,0.15);
+  border-color: rgba(0,102,255,0.4);
+  box-shadow: 0 0 20px rgba(0,102,255,0.2);
 }
 
 .card-icon svg {
   width: 26px; height: 26px;
-  stroke: var(--orange);
+  stroke: var(--blue);
   fill: none;
   stroke-width: 1.5;
   stroke-linecap: round;
@@ -732,7 +732,7 @@ body:has(button:hover) .cursor-follower {
   font-family: var(--font-display);
   font-size: 11px;
   letter-spacing: 3px;
-  color: var(--orange);
+  color: var(--blue);
   opacity: 0.6;
   margin-bottom: 10px;
 }
@@ -765,9 +765,9 @@ body:has(button:hover) .cursor-follower {
   font-family: var(--font-body);
   font-weight: 600;
   letter-spacing: 0.5px;
-  color: var(--orange-light);
-  background: rgba(255,102,0,0.08);
-  border: 1px solid rgba(255,102,0,0.15);
+  color: var(--blue-light);
+  background: rgba(0,102,255,0.08);
+  border: 1px solid rgba(0,102,255,0.15);
   padding: 4px 12px;
   border-radius: 100px;
 }
@@ -788,7 +788,7 @@ body:has(button:hover) .cursor-follower {
 }
 
 .service-card:hover .card-link {
-  color: var(--orange);
+  color: var(--blue);
 }
 
 .service-card:hover .card-link span {
@@ -809,7 +809,7 @@ body:has(button:hover) .cursor-follower {
   content: '';
   position: absolute;
   width: 600px; height: 600px;
-  background: radial-gradient(circle, rgba(255,102,0,0.06) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(0,102,255,0.06) 0%, transparent 70%);
   top: 50%; left: -200px;
   transform: translateY(-50%);
   pointer-events: none;
@@ -848,7 +848,7 @@ body:has(button:hover) .cursor-follower {
 }
 
 .step:last-child { border-bottom: none; }
-.step:hover .step-num { color: var(--orange); text-shadow: 0 0 20px rgba(255,102,0,0.5); }
+.step:hover .step-num { color: var(--blue); text-shadow: 0 0 20px rgba(0,102,255,0.5); }
 
 .step-num {
   font-family: var(--font-display);
@@ -914,9 +914,9 @@ body:has(button:hover) .cursor-follower {
   transition: transform 0.6s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
-.p1 { background: linear-gradient(135deg, #1a0d00, #2d1a00, #0f0800); }
+.p1 { background: linear-gradient(135deg, #00081a, #001433, #000a1f); }
 .p2 { background: linear-gradient(135deg, #0d0d1a, #1a1a2d, #08080f); }
-.p3 { background: linear-gradient(135deg, #001a0d, #002d1a, #000f08); }
+.p3 { background: linear-gradient(135deg, #000d1a, #001a2d, #00080f); }
 
 .work-card:hover .work-placeholder { transform: scale(1.08); }
 
@@ -940,7 +940,7 @@ body:has(button:hover) .cursor-follower {
   font-weight: 700;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: var(--orange);
+  color: var(--blue);
   margin-bottom: 6px;
 }
 
@@ -956,7 +956,7 @@ body:has(button:hover) .cursor-follower {
   font-family: var(--font-body);
   font-size: 12px;
   font-weight: 700;
-  color: var(--orange);
+  color: var(--blue);
   letter-spacing: 0.5px;
   transition: var(--transition);
   display: inline-block;
@@ -995,19 +995,19 @@ body:has(button:hover) .cursor-follower {
   right: 20px;
   font-size: 120px;
   font-family: Georgia, serif;
-  color: rgba(255,102,0,0.06);
+  color: rgba(0,102,255,0.06);
   line-height: 1;
   pointer-events: none;
 }
 
 .testi-card:hover {
-  border-color: rgba(255,102,0,0.2);
-  box-shadow: 0 0 40px rgba(255,102,0,0.06);
+  border-color: rgba(0,102,255,0.2);
+  box-shadow: 0 0 40px rgba(0,102,255,0.06);
   transform: translateY(-4px);
 }
 
 .testi-stars {
-  color: var(--orange);
+  color: var(--blue);
   font-size: 14px;
   letter-spacing: 2px;
   margin-bottom: 20px;
@@ -1036,13 +1036,13 @@ body:has(button:hover) .cursor-follower {
   font-family: var(--font-body);
   font-size: 13px;
   font-weight: 800;
-  color: var(--black);
+  color: var(--white);
   flex-shrink: 0;
 }
 
-.av1 { background: linear-gradient(135deg, var(--orange), #ff3300); }
-.av2 { background: linear-gradient(135deg, #ff8800, var(--orange)); }
-.av3 { background: linear-gradient(135deg, var(--orange-light), #ffaa00); }
+.av1 { background: linear-gradient(135deg, #0044cc, #0066ff); }
+.av2 { background: linear-gradient(135deg, #0055ee, #3385ff); }
+.av3 { background: linear-gradient(135deg, #3385ff, #66aaff); }
 
 .testi-author strong {
   display: block;
@@ -1072,7 +1072,7 @@ body:has(button:hover) .cursor-follower {
   content: '';
   position: absolute;
   width: 500px; height: 500px;
-  background: radial-gradient(circle, rgba(255,102,0,0.07) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(0,102,255,0.07) 0%, transparent 70%);
   top: 50%; right: -100px;
   transform: translateY(-50%);
   pointer-events: none;
@@ -1111,7 +1111,7 @@ body:has(button:hover) .cursor-follower {
 
 .info-item svg {
   width: 18px; height: 18px;
-  stroke: var(--orange);
+  stroke: var(--blue);
   fill: none;
   stroke-width: 1.5;
   stroke-linecap: round;
@@ -1164,7 +1164,7 @@ body:has(button:hover) .cursor-follower {
 }
 
 .form-group select {
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' fill='none' stroke='%23ff6600' stroke-width='2' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' fill='none' stroke='%230066ff' stroke-width='2' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
   background-repeat: no-repeat;
   background-position: right 16px center;
   background-size: 16px;
@@ -1185,9 +1185,9 @@ body:has(button:hover) .cursor-follower {
 .form-group input:focus,
 .form-group select:focus,
 .form-group textarea:focus {
-  border-color: var(--orange);
-  background: rgba(255,102,0,0.04);
-  box-shadow: 0 0 0 3px rgba(255,102,0,0.1), 0 0 20px rgba(255,102,0,0.05);
+  border-color: var(--blue);
+  background: rgba(0,102,255,0.04);
+  box-shadow: 0 0 0 3px rgba(0,102,255,0.1), 0 0 20px rgba(0,102,255,0.05);
 }
 
 .form-group textarea {
@@ -1199,21 +1199,21 @@ body:has(button:hover) .cursor-follower {
   display: none;
   align-items: center;
   gap: 10px;
-  background: rgba(255,102,0,0.1);
-  border: 1px solid rgba(255,102,0,0.3);
+  background: rgba(0,102,255,0.1);
+  border: 1px solid rgba(0,102,255,0.3);
   border-radius: var(--radius-sm);
   padding: 16px 20px;
   font-family: var(--font-body);
   font-size: 14px;
   font-weight: 600;
-  color: var(--orange-light);
+  color: var(--blue-light);
 }
 
 .form-success.show { display: flex; }
 
 .form-success svg {
   width: 20px; height: 20px;
-  stroke: var(--orange);
+  stroke: var(--blue);
   fill: none;
   stroke-width: 2;
   stroke-linecap: round;
@@ -1279,7 +1279,7 @@ body:has(button:hover) .cursor-follower {
   transition: var(--transition);
 }
 
-.footer-col a:hover { color: var(--orange); }
+.footer-col a:hover { color: var(--blue); }
 
 .social-links {
   display: flex;
@@ -1308,10 +1308,10 @@ body:has(button:hover) .cursor-follower {
 }
 
 .social-link:hover {
-  border-color: var(--orange);
-  color: var(--orange);
-  background: rgba(255,102,0,0.08);
-  box-shadow: 0 0 16px rgba(255,102,0,0.15);
+  border-color: var(--blue);
+  color: var(--blue);
+  background: rgba(0,102,255,0.08);
+  box-shadow: 0 0 16px rgba(0,102,255,0.15);
   transform: translateY(-2px);
 }
 
@@ -1338,7 +1338,7 @@ body:has(button:hover) .cursor-follower {
   transition: var(--transition);
 }
 
-.footer-legal a:hover { color: var(--orange); }
+.footer-legal a:hover { color: var(--blue); }
 
 /* ============================================
    RESPONSIVE
