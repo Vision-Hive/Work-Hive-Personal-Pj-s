@@ -145,7 +145,7 @@ body:has(button:hover) .cursor-follower {
 }
 
 .nav-logo img {
-  height: 42px;
+  height: 120px;
   width: auto;
   max-width: 180px;
   object-fit: contain;
